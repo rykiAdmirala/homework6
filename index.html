@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+
+		<div class="header">
+			 <div class="header-phone">
+			 	(044)123-45-67 (044)567-89-10
+			 </div>
+			 <div class="header-login">
+			 	<form action="" class="header-login-form">
+			 		<input type="name" name="login" placeholder="логин">
+					<input type="password" name="password" placeholder="пароль">
+					<input type="submit" name="sign-in" value="вход">
+			 	</form>
+				<a href="#" class="header-signup">регистрация</a>
+				<a href="#" class="header-remind">забыли пароль?</a>
+			 </div>
+			 <div class="header-btn-block">
+			 	<a href="#" class="header-btn home"></a>
+   			 	<a href="#" class="header-btn map"></a>
+   			 	<a href="#" class="header-btn email"></a>
+			 </div>
+		</div>
+
+
+		<div class="top-img">
+			<img src="../img/top-img.jpg" alt="">
+		</div>
+
+
+		<nav>
+			<ul class="top-menu">
+				<li class="active"><a href="#">О компании</a></li>
+				<li><a href="#">Оплата</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="cart-block">
+				<div class="cart-qnt-label">
+					товаров:
+				</div>
+				<div class="cart-qnt">0</div>
+				<div class="cart-sum-label">
+					на сумму:
+				</div>
+				<div class="cart-sum">0,00 грн.</div>
+			</div>
+		</nav>
+
+		<div class="search-wrap">
+			<form action="" class="search-car">
+				<div class="search-car-title-left">Диски:</div>
+				<div class="search-car-title-right">Шины:</div>
+				<div class="search-car-title">Поиск по автомобилю</div>
+
+				<div class="search-car-left">
+					<div class="search-car-label"><span class="b">Марка</span> авто:</div>
+					<select name="brand">
+						<option value="1"></option>
+						<option value="2"></option>
+					</select>
+
+					<div class="search-car-label"><span class="b">Модель</span> автомобиля:</div>
+					<select name="model">
+						<option value="1"></option>
+						<option value="2"></option>
+					</select>
+
+					<div class="search-car-label"><span class="b">Год выпуска</span> автомобиля:</div>
+					<select name="year">
+						<option value="1"></option>
+						<option value="2"></option>
+					</select>
+
+					<div class="search-car-label"><span class="b">Комплектация:</span></div>
+					<select name="package">
+						<option value="1"></option>
+						<option value="2"></option>
+					</select>
+				</div>
+
+				<div class="search-car-right">
+					<div class="search-car-label"><span class="b">Марка</span> авто:</div>
+					<select name="brand">
+						<option value="1"></option>
+						<option value="2"></option>
+					</select>
+
+					<div class="search-car-label"><span class="b">Модель</span> автомобиля:</div>
+					<select name="model">
+						<option value="1"></option>
+						<option value="2"></option>
+					</select>
+
+					<div class="search-car-label"><span class="b">Год выпуска</span> автомобиля:</div>
+					<select name="year">
+						<option value="1"></option>
+						<option value="2"></option>
+					</select>
+
+					<div class="search-car-label"><span class="b">Комплектация:</span></div>
+					<select name="package">
+						<option value="1"></option>
+						<option value="2"></option>
+					</select>
+				</div>
+
+				<div class="search-submit">
+					<input type="submit" value="поиск...">
+				</div>
+			</form>
+
+
+			<form action="" class="search-tire">
+				<div class="search-title">Поиск шин</div>
+
+				<div class="search-tire-label">Размер</div>
+				<select name="size-1">
+					<option value="145">145</option>
+					<option value="150">150</option>
+				</select>
+				/
+				<select name="size-2">
+					<option value="1"></option>
+					<option value="2"></option>
+				</select>
+
+				<div class="row">
+					<div class="search-tire-label">R:</div>
+					<select name="radius">
+						<option value="12">12</option>
+						<option value="14">14</option>
+					</select>
+				</div>
+
+				<div class="search-tire-label">Сезон:</div>
+				<div class="search-tire-season">
+					<label><input type="checkbox" name="season-1" value="summer">лето</label>
+					<label><input type="checkbox" name="season-2" value="winter">зима</label>
+					<label><input type="checkbox" name="season-3" value="all">всесез</label>
+				</div>
+
+
+
+				<div class="search-submit">
+					<input type="submit" value="поиск...">
+				</div>
+			</form>
+
+			<form action="" class="search-rim">
+				<div class="search-rim-left">
+					<div class="search-title">Поиск дисков</div>
+
+					<div class="search-rim-label"><span class="b">Диаметр</span> диска:</div>
+					<select name="dia-rim">
+						<option value="14">14</option>
+						<option value="15">15</option>
+					</select>
+
+					<div class="search-rim-label"><span class="b">Количество</span> крепёжных отверстий:</div>
+					<select name="qnt-mount-holes">
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+
+					<div class="search-rim-label"><span class="b">Диаметр</span> расположения крепёжных отверстий:</div>
+					<select name="dia-mount-holes">
+						<option value="14">14</option>
+						<option value="15">15</option>
+					</select>
+				</div>
+
+				<div class="search-rim-right">
+					<div class="search-rim-label"><span class="b">ДЦО</span><br>(диаметр центрального отверстия):</div>
+					<select name="dia-mount-holes-center">
+						<option value="12">12</option>
+						<option value="13">13</option>
+					</select>
+
+					<div class="search-rim-label"><span class="b">ET</span><br>(вылет диска):</div>
+					<select name="rim-offset">
+						<option value="12">12</option>
+						<option value="13">13</option>
+					</select>
+				</div>
+
+
+
+				<div class="search-submit">
+					<input type="submit" value="поиск...">
+				</div>
+			</form>
+
+
+		</div>
+
+
+
+
+
+
+	</div>
+</body>
+</html>
