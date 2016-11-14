@@ -1,0 +1,330 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+input:focus,
+button:focus,
+select:focus {
+	outline: 0;
+}
+
+/* GENERAL STYLES */
+body {
+	font-family: Arial, sans-serif;
+}
+.wrapper {
+	width: 910px;
+	margin: 0 auto;
+	padding: 17px 0 0;
+}
+.black {
+	color: #000;
+}
+
+/* HEADER */
+.header-phone,
+.header-login,
+.header-login-form,
+.header-signup,
+.header-remind,
+.header-btn-block,
+.header-btn {
+	display: inline-block;
+	vertical-align: top;
+}
+.header-phone {
+	background: url(../img/header-phone.png) no-repeat 2px center;
+	margin: 2px 0 0 5px;
+	padding: 0 0 0 30px;
+	color: #5e696d;
+	font-size: 18px;
+}
+.header-login {
+	margin: 0 0 0 7px;
+	padding: 3px 5px 3px 25px;
+	background: url(../img/header-login.png) no-repeat 7px center, linear-gradient(to bottom, #206988 0%, #114165 59%, #0c3256 100% );
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 0 rgba(150,150,150,.75);
+	color: #fff;
+	font: 11px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.header-login input {
+	width: 114px;
+	margin: 0 7px 0 0;
+	padding: 0 4px;
+	border: 1px solid #9ba1a3;
+	border-radius: 2px;
+	line-height: 17px;
+	box-sizing: border-box;
+}
+.header-login button {
+
+border: 0;
+
+background: 0;
+
+vertical-align: inherit;
+
+color: #fff;
+
+cursor: pointer;
+
+font: inherit;
+}
+.header-signup {
+	margin: 5px 0 0 3px;
+	padding: 0 0 0 3px;
+	border-left: 1px solid;
+	line-height: 1;
+	color: #fff;
+}
+.header-remind {
+	margin: 0px 0 0 5px;
+	border-bottom: 1px solid;
+	color: #bfbfbf;
+}
+.header-btn-block {
+	margin: 0 0 0 17px;
+	padding: 5px 10px 0;
+	border: 1px solid #bdc4c7;
+	border-radius: 20px;
+	box-shadow: 1px 1px 3px 0 rgba(126,140,145,.52);
+	text-align: center;
+}
+.header-btn {
+	width: 12px;
+	height: 11px;
+	background: url(../img/header-btn-sprite.png) no-repeat left center;
+}
+.header-btn.map {
+	margin: 0 9px 0 8px;
+	width: 14px;
+	background-position: -11px 0;
+}
+.header-btn.email {
+	background-position: -26px 0;
+}
+
+/* TOP IMAGE */
+.top-img {
+	margin: 10px 0 0;
+}
+.top-img img {
+	width: 100%;
+}
+
+/* TOP MENU BLOCK */
+.top-menu-wrap {
+	margin: 6px 0 0;
+	padding: 3px 0;
+	background: linear-gradient(to top, #000 0%, #000 74%, #576068 100%);
+	border: 1px solid #0d1642;
+	border-radius: 4px;
+	box-shadow: 3px 3px 5px 0 rgba(0,0,0,.75);
+	text-align: right;
+}
+.top-menu,
+.cart-block {
+	display: inline-block;
+	vertical-align: middle;
+}
+.top-menu {
+	margin: 0 53px 0 0;
+}
+.top-menu li {
+	display: inline-block;
+	vertical-align: top;
+}
+.top-menu a {
+	display: block;
+	padding: 8px 17px;
+	color: #b1bcc0;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.top-menu a.active,
+.top-menu a:hover {
+	background: linear-gradient(to bottom, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+	border-radius: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+.cart-block {
+	margin: 0 13px 0 0;
+	padding: 0 0 0 30px;
+	background: url(../img/cart-icon.png) no-repeat left center;
+	color: #929b9f;
+	font-size: 11px;
+	line-height: 32px;
+}
+.cart-qnty,
+.cart-sum {
+	color: #0d5a8f;
+}
+.cart-sum-label {
+	display: inline-block;
+	margin: 0 10px 0 15px;
+}
+
+/* SEARCH FORMS */
+.search-wrap {
+	margin: 12px 0 0;
+	text-align: center;
+}
+.search-form {
+	display: inline-block;
+	vertical-align: top;
+	height: 133px;
+	padding: 0 5px 0 10px;
+	border: 1px solid #9c9c9d;
+	border-radius: 17px;
+	box-shadow: 5px 5px 5px 0px rgba(104, 104, 104, 0.75);
+	box-sizing: border-box;
+	text-align: left;
+}
+.search-form.car {
+	width: 413px;
+}
+.search-form.tire {
+	width: 191px;
+	margin: 0 8px 0 13px;
+}
+.search-form.rim {
+	width: 266px;
+}
+.search-form header {
+	margin: 0 0 3px;
+}
+.search-car-title-left,
+.search-car-title-right {
+	float: left;
+	margin: 6px 3px 0;
+	font: 10px Arial Black;
+	font-weight: bold;
+	color: #154468;
+}
+.search-car-title-right {
+	float: right;
+}
+.search-car-title {
+	color: #154468;
+	text-align: center;
+	font: 12px Arial Black;
+}
+.search-form-label,
+.search-form select,
+.search-car-left,
+.search-car-right {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 10px;
+}
+.search-car-left {
+	width: 178px;
+	margin: 0 28px 0 0;
+}
+.search-car-right {
+	width: 178px;
+}
+.search-form-label {
+    margin: 0 0 1px;
+}
+.search-form select {
+    box-shadow: inset 1px 1px 3px 0 rgba(0,0,0,.75);
+}
+.car .search-form-label {
+	width: 71px;
+	font-size: 9px;
+	color: #77858b;
+}
+.car .search-form-label .black {
+	font-size: 10px;
+}
+.search-form.car select {
+	width: 102px;
+	height: 17px;
+}
+.search-form.car select[name='year'] {
+	width: 60px;
+}
+.search-submit {
+	padding: 0 10px 0 0;
+	text-align: right;
+}
+.search-submit button {
+	background: 0;
+	border: 0;
+	border-bottom: 1px solid;
+	color: #154467;
+	font-size: 14px;
+	font-style: italic;
+	cursor: pointer;
+}
+.search-title {
+	margin: 3px 0 3px;
+	color: #154468;
+	font: 12px Arial Black;
+}
+.tire .search-form-label {
+	margin-right: 3px;
+	width: 42px;
+	text-align: right;
+}
+.tire.search-form select {
+    width: 50px;
+}
+.tire.search-form select[name=radius] {
+    width: 40px;
+}
+.search-form.tire .row {
+    margin: 0 0 2px;
+}
+.search-form.tire .row:nth-of-type(3) {
+	margin: 0;
+}
+.search-form.tire label {
+    display: block;
+    font-size: 11px;
+}
+.search-tire-season {
+    display: inline-block;
+    vertical-align: top;
+}
+.search-tire-season input {
+    position: relative;
+    top: 3px;
+    margin: 0 3px 0;
+}
+.search-rim-left {
+    display: inline-block;
+    vertical-align: top;
+    width: 152px;
+}
+.search-rim-right {
+    display: inline-block;
+    vertical-align: top;
+    width: 73px;
+    padding: 0 0 0 9px;
+    border-left: 1px solid #bdc6ca;
+    box-sizing: border-box;
+}
+.rim .search-form-label {
+    width: 86px;
+    color: #77858b;
+    font-size: 9px;
+}
+.rim .search-form-label .black {
+    font-size: 10px;
+}
+.search-form.rim select {
+    margin: 0 0 3px;
+}
