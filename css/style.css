@@ -67,21 +67,15 @@ body {
 	box-sizing: border-box;
 }
 .header-login button {
-
-border: 0;
-
-background: 0;
-
-vertical-align: inherit;
-
-color: #fff;
-
-cursor: pointer;
-
-font: inherit;
+	border: 0;
+	background: 0;
+	vertical-align: inherit;
+	color: #fff;
+	cursor: pointer;
+	font: inherit;
 }
 .header-signup {
-	margin: 5px 0 0 3px;
+	margin: 3px 0 0 3px;
 	padding: 0 0 0 3px;
 	border-left: 1px solid;
 	line-height: 1;
@@ -91,6 +85,9 @@ font: inherit;
 	margin: 0px 0 0 5px;
 	border-bottom: 1px solid;
 	color: #bfbfbf;
+}
+.header-remind:hover {
+	text-decoration: none;
 }
 .header-btn-block {
 	margin: 0 0 0 17px;
@@ -238,6 +235,9 @@ font: inherit;
 .search-form-label {
     margin: 0 0 1px;
 }
+.search-form-label:last-of-type {
+	margin: 0;
+}
 .search-form select {
     box-shadow: inset 1px 1px 3px 0 rgba(0,0,0,.75);
 }
@@ -313,6 +313,7 @@ font: inherit;
     display: inline-block;
     vertical-align: top;
     width: 73px;
+    margin: 5px 0 0;
     padding: 0 0 0 9px;
     border-left: 1px solid #bdc6ca;
     box-sizing: border-box;
@@ -327,4 +328,179 @@ font: inherit;
 }
 .search-form.rim select {
     margin: 0 0 3px;
+}
+
+
+/* CONTENT */
+.content {
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.content aside {
+    min-width: 180px;
+    max-width: 180px;
+    color: #114165;
+}
+.content main {
+    margin: 0 10px;
+}
+.aside-title {
+    margin: 0 0 10px;
+    padding: 0 0 0 25px;
+    border: 1px solid #79878d;
+    border-radius: 21px;
+    box-shadow: 0px 3px 3px 0px rgba(150, 150, 150, 0.75);
+    background: url(../img/aside-title.png) no-repeat 2px 1px;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+aside li span {
+    position: relative;
+    display: block;
+    width: 150px;
+    padding: 0 0 0 29px;
+    border: 1px solid #79878d;
+    border-radius: 20px;
+    line-height: 26px;
+    box-sizing: border-box;
+}
+aside li span:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 4px solid #114165;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.catalog-child-list {
+    padding: 0 0 0 35px;
+}
+.catalog-child-list li {
+    position: relative;
+    padding: 0 0 0 10px;
+    color: #465961;
+}
+.catalog-child-list li:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border: 2px solid;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.catalog-child-list li.active {
+    font: bold italic 14px/1.4 Arial;
+    text-decoration: underline;
+    color: #0c3256;
+}
+.catalog-child-list a {
+    color: inherit;
+}
+.brands-list {
+    padding: 0 0 0 15px;
+}
+.brands-list-child {
+    padding: 0 0 0 10px;
+    color: #465961;
+}
+.brands-list-child li {
+    margin: 5px 0;
+}
+.brands-list-child li label input {
+    position: relative;
+    top: 3px;
+    margin: 0 7px 0 0;
+}
+.brands-list-submit {
+    display: block;
+    margin: 20px 0 0 25px;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    border: 0;
+    border-radius: 11px;
+    box-shadow: 1px 2px 3px 0px rgba(150, 150, 150, 0.55);
+    color: #fff;
+    line-height: 25px;
+    cursor: pointer;
+}
+.product-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px 0 0;
+    background: linear-gradient(to bottom, #e4e6e8, #94a7b1);
+    border-radius: 3px;
+}
+.product-item {
+    width: 26%;
+    margin: 0 0 20px;
+    text-align: center;
+}
+.product-name {
+    color: #206988;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1;
+}
+.product-figure figcaption {
+    color: #1f2528;
+}
+.product-img {
+    padding: 5px 0;
+    background: #fff;
+    border: 1px solid #a4aeb1;
+    border-radius: 7px;
+}
+.product-price {
+    margin: 7px 0 0;
+    font: italic bold 16px Arial;
+    color: #114165;
+}
+.partners {
+    margin: 30px 0 0;
+    text-align: center;
+}
+.partners img {
+    margin: 0 4px;
+    vertical-align: middle;
+}
+footer {
+    margin: 20px 0 0;
+    padding: 10px 0 50px;
+    background: #213a4d;
+}
+.footer-menu {
+    text-align: center;
+}
+.footer-menu li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+    border-right: 1px solid #bec6c9;
+    font-size: 12px;
+    line-height: 1;
+}
+.footer-menu li a {
+    color: #bec6c9;
+}
+.footer-menu li a:hover,
+.footer-menu li.active a {
+    color: #52abcb;
+}
+.footer-copyright {
+    margin: 10px 0 0;
+    font-size: 10px;
+    text-align: center;
+    color: #7f4740;
 }
